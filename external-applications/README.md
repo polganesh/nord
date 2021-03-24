@@ -15,8 +15,10 @@ helm upgrade --install --namespace ingress alb aws-alb-ingress-controller --set-
 This will 
 - create actual Application load balancer in AWS.
   - for more information refer - alb.ingress.kubernetes.io/subnets - subnets where alb needs to be created. these are our public subnets
-- register certificate with load balancer
+- register certificate with load balancer (if it is needed)
   - for more information refer - alb.ingress.kubernetes.io/certificate-arn
+- restict to specific CIDR
+  - alb.ingress.kubernetes.io/inbound-cidrs
 ```
 kubectl apply -f alb-nginx-mapper-ingress.yaml
 ```
