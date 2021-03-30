@@ -8,7 +8,7 @@ This section try to highlight thought process for designing IaaC. main focus is 
 
 ## Code Structure
 
-![alt text](https://github.com/polganesh/nord/blob/main/docs/images/iaac.jpg)
+![alt text](https://github.com/polganesh/nord/blob/main/docs/images/iaac.PNG)
 
 - All Infrastucture as a Code follow this folder structure.
 - in real life it should be present in **different git repository** (which provide single responsibility) instead of writing all code in single repository. 
@@ -61,7 +61,7 @@ helm init --service-account tiller
 [Refer](https://docs.aws.amazon.com/eks/latest/userguide/dashboard-tutorial.html) 
 
 #### Install load balancer configure domain etc  
-for more information refer Readme for external-app Refer (hhttps://github.com/polganesh/nord/tree/main/external-applications)
+for more information refer Readme for external-app Refer (https://github.com/polganesh/nord/tree/main/external-applications)
 
 #### Configure Load Balancer 
 This will enable multiple subdomains to use same. (e.g. api.demo.polganesh.de)
